@@ -19,6 +19,8 @@
 		B693D79824CD305400146D00 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B693D79724CD305400146D00 /* Helper.swift */; };
 		B693D79A24CD34A200146D00 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B693D79924CD34A200146D00 /* ItemRow.swift */; };
 		B693D79C24CD3A7100146D00 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B693D79B24CD3A7100146D00 /* ItemDetail.swift */; };
+		B693D79E24CDB16D00146D00 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B693D79D24CDB16D00146D00 /* OrderView.swift */; };
+		B693D7A024CDB25700146D00 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B693D79F24CDB25700146D00 /* AppView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		B693D79724CD305400146D00 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		B693D79924CD34A200146D00 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		B693D79B24CD3A7100146D00 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
+		B693D79D24CDB16D00146D00 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		B693D79F24CDB25700146D00 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,16 +111,10 @@
 		B693D76524CD300700146D00 /* iDine */ = {
 			isa = PBXGroup;
 			children = (
-				B693D76624CD300700146D00 /* iDineApp.swift */,
-				B693D76824CD300700146D00 /* ContentView.swift */,
-				B693D79924CD34A200146D00 /* ItemRow.swift */,
-				B693D79B24CD3A7100146D00 /* ItemDetail.swift */,
-				B693D79124CD304400146D00 /* Order.swift */,
-				B693D79324CD304900146D00 /* Menu.swift */,
-				B693D79524CD304E00146D00 /* menu.json */,
-				B693D79724CD305400146D00 /* Helper.swift */,
-				B693D76A24CD300900146D00 /* Assets.xcassets */,
-				B693D76F24CD300900146D00 /* Info.plist */,
+				B693D7A224CDB28800146D00 /* Views */,
+				B693D7A324CDB2B600146D00 /* Model */,
+				B693D7A424CDB2BD00146D00 /* Helper */,
+				B693D7A124CDB26F00146D00 /* Resources */,
 				B693D76C24CD300900146D00 /* Preview Content */,
 			);
 			path = iDine;
@@ -146,6 +144,46 @@
 				B693D78524CD300900146D00 /* Info.plist */,
 			);
 			path = iDineUITests;
+			sourceTree = "<group>";
+		};
+		B693D7A124CDB26F00146D00 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B693D79524CD304E00146D00 /* menu.json */,
+				B693D76A24CD300900146D00 /* Assets.xcassets */,
+				B693D76F24CD300900146D00 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B693D7A224CDB28800146D00 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B693D76624CD300700146D00 /* iDineApp.swift */,
+				B693D76824CD300700146D00 /* ContentView.swift */,
+				B693D79924CD34A200146D00 /* ItemRow.swift */,
+				B693D79B24CD3A7100146D00 /* ItemDetail.swift */,
+				B693D79D24CDB16D00146D00 /* OrderView.swift */,
+				B693D79F24CDB25700146D00 /* AppView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B693D7A324CDB2B600146D00 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B693D79124CD304400146D00 /* Order.swift */,
+				B693D79324CD304900146D00 /* Menu.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B693D7A424CDB2BD00146D00 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B693D79724CD305400146D00 /* Helper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +317,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B693D79C24CD3A7100146D00 /* ItemDetail.swift in Sources */,
+				B693D79E24CDB16D00146D00 /* OrderView.swift in Sources */,
+				B693D7A024CDB25700146D00 /* AppView.swift in Sources */,
 				B693D79224CD304400146D00 /* Order.swift in Sources */,
 				B693D76924CD300700146D00 /* ContentView.swift in Sources */,
 				B693D79824CD305400146D00 /* Helper.swift in Sources */,
@@ -445,7 +485,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"iDine/Preview Content\"";
 				DEVELOPMENT_TEAM = 4939K9623X;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = iDine/Info.plist;
+				INFOPLIST_FILE = iDine/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -467,7 +507,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"iDine/Preview Content\"";
 				DEVELOPMENT_TEAM = 4939K9623X;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = iDine/Info.plist;
+				INFOPLIST_FILE = iDine/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
