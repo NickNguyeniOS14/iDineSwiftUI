@@ -18,6 +18,7 @@
 		B693D79624CD304E00146D00 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = B693D79524CD304E00146D00 /* menu.json */; };
 		B693D79824CD305400146D00 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B693D79724CD305400146D00 /* Helper.swift */; };
 		B693D79A24CD34A200146D00 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B693D79924CD34A200146D00 /* ItemRow.swift */; };
+		B693D79C24CD3A7100146D00 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B693D79B24CD3A7100146D00 /* ItemDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		B693D79524CD304E00146D00 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		B693D79724CD305400146D00 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		B693D79924CD34A200146D00 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		B693D79B24CD3A7100146D00 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				B693D76624CD300700146D00 /* iDineApp.swift */,
 				B693D76824CD300700146D00 /* ContentView.swift */,
 				B693D79924CD34A200146D00 /* ItemRow.swift */,
+				B693D79B24CD3A7100146D00 /* ItemDetail.swift */,
 				B693D79124CD304400146D00 /* Order.swift */,
 				B693D79324CD304900146D00 /* Menu.swift */,
 				B693D79524CD304E00146D00 /* menu.json */,
@@ -275,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B693D79C24CD3A7100146D00 /* ItemDetail.swift in Sources */,
 				B693D79224CD304400146D00 /* Order.swift in Sources */,
 				B693D76924CD300700146D00 /* ContentView.swift in Sources */,
 				B693D79824CD305400146D00 /* Helper.swift in Sources */,
