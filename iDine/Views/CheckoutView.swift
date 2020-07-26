@@ -12,6 +12,8 @@ struct CheckoutView: View {
   @State private var paymentType = 0
   @State private var addLoyalDetails = false
   @State private var loyaltyNumber = ""
+  @State private var tipAmount = 1
+  static let tipAmounts = [10,15,20,25,0]
   
   
   static let paymentTypes = ["Cash","Credit Card","iDine Points"]
@@ -23,13 +25,29 @@ struct CheckoutView: View {
             Text(Self.paymentTypes[$0])
           }
         }
-        Toggle(isOn: $addLoyalDetails) {
+        Toggle(isOn: $addLoyalDetails.animation()) {
           Text("Add iDine loyalty card")
         }
         if addLoyalDetails {
           TextField("Enter your iDine ID",text:$loyaltyNumber)
         }
       }
+      
+      Section(header:Text("Add a tip?")) {
+        Picker("Percentage:",selection: $tipAmount) {
+          ForEach(0 ..< Self.tipAmounts.count) {
+            Text("\(Self.tipAmounts[$0])%")
+          }
+        }
+        .pickerStyle(SegmentedPickerStyle())
+      }
+      
+      Section(header: Text("TOTAL: $100")) {
+        Button("Confirm order") {
+          // place the order 
+        }
+      }
+      
     }
     .navigationBarTitle(Text("Payment"),displayMode: .inline)
   }
