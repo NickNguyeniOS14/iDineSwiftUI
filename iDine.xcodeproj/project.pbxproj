@@ -21,6 +21,7 @@
 		B693D79C24CD3A7100146D00 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B693D79B24CD3A7100146D00 /* ItemDetail.swift */; };
 		B693D79E24CDB16D00146D00 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B693D79D24CDB16D00146D00 /* OrderView.swift */; };
 		B693D7A024CDB25700146D00 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B693D79F24CDB25700146D00 /* AppView.swift */; };
+		B693D7A624CDB47200146D00 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B693D7A524CDB47200146D00 /* CheckoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		B693D79B24CD3A7100146D00 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 		B693D79D24CDB16D00146D00 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		B693D79F24CDB25700146D00 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		B693D7A524CDB47200146D00 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				B693D79B24CD3A7100146D00 /* ItemDetail.swift */,
 				B693D79D24CDB16D00146D00 /* OrderView.swift */,
 				B693D79F24CDB25700146D00 /* AppView.swift */,
+				B693D7A524CDB47200146D00 /* CheckoutView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 			files = (
 				B693D79C24CD3A7100146D00 /* ItemDetail.swift in Sources */,
 				B693D79E24CDB16D00146D00 /* OrderView.swift in Sources */,
+				B693D7A624CDB47200146D00 /* CheckoutView.swift in Sources */,
 				B693D7A024CDB25700146D00 /* AppView.swift in Sources */,
 				B693D79224CD304400146D00 /* Order.swift in Sources */,
 				B693D76924CD300700146D00 /* ContentView.swift in Sources */,
