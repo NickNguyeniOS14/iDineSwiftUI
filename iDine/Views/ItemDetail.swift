@@ -29,6 +29,10 @@ struct ItemDetail: View {
         self.order.add(item: self.item)
         
       }.font(.headline)
+      .foregroundColor(.white)
+      .padding()
+      .background(Color.black)
+      .cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
       
       Spacer()
       
